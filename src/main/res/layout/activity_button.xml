@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonPage"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/queimaduras"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/membros_cortados"
+            app:layout_constraintTop_toBottomOf="@+id/membros_cortados"
+            app:srcCompat="@drawable/img7" />
+
+        <ImageView
+            android:id="@+id/membros_cortados"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/sangramento"
+            app:layout_constraintTop_toBottomOf="@+id/sangramento"
+            app:srcCompat="@drawable/img6" />
+
+        <ImageView
+            android:id="@+id/desmaio"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/queimaduras"
+            app:layout_constraintTop_toBottomOf="@+id/queimaduras"
+            app:srcCompat="@drawable/img8" />
+
+        <ImageView
+            android:id="@+id/avulsao"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="44dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/choque"
+            app:layout_constraintTop_toBottomOf="@+id/choque"
+            app:srcCompat="@drawable/img12" />
+
+        <ImageView
+            android:id="@+id/engasgo_crianca"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="50dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/white"
+            android:src="@drawable/img1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/parada"
+            android:layout_width="166dp"
+            android:layout_height="172dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/desmaio"
+            app:layout_constraintTop_toBottomOf="@+id/desmaio"
+            app:srcCompat="@drawable/img10" />
+
+        <ImageView
+            android:id="@+id/sagramento_nasal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/engasgo_gest_obesos"
+            app:layout_constraintTop_toBottomOf="@+id/engasgo_gest_obesos"
+            app:srcCompat="@drawable/img4" />
+
+        <ImageView
+            android:id="@+id/choque"
+            android:layout_width="146dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/parada"
+            app:layout_constraintTop_toBottomOf="@+id/parada"
+            app:srcCompat="@drawable/img11" />
+
+        <ImageView
+            android:id="@+id/sangramento"
+            android:layout_width="142dp"
+            android:layout_height="149dp"
+            android:layout_marginEnd="48dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/sagramento_nasal"
+            app:layout_constraintTop_toBottomOf="@+id/sagramento_nasal"
+            app:srcCompat="@drawable/img5" />
+
+        <ImageView
+            android:id="@+id/convulsao"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/queimaduras"
+            app:layout_constraintTop_toBottomOf="@+id/queimaduras"
+            app:srcCompat="@drawable/img9"/>
+
+        <ImageView
+            android:id="@+id/engasgo_gest_obesos"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/engasgo_adulto"
+            app:layout_constraintTop_toBottomOf="@+id/engasgo_adulto"
+            app:srcCompat="@drawable/img3" />
+
+        <ImageView
+            android:id="@+id/engasgo_adulto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/engasgo_crianca"
+            app:layout_constraintTop_toBottomOf="@+id/engasgo_crianca"
+            app:srcCompat="@drawable/img2">
+        </ImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
